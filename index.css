@@ -1,0 +1,443 @@
+      /* Basic styling */
+      body, html {
+        margin: 0;
+        padding: 0;
+        font-family: 'Times New Roman', serif;
+        height: 100%;
+      }
+
+      .background-image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1; 
+        object-fit: cover; 
+      }
+
+      /* Navbar styling */
+      .navigation-bar {
+        padding: 10px 20px;
+        background-color: rgba(0, 0, 0, 0)!important;
+      }
+
+
+.nav-list li {
+  position: relative;
+  display: inline-block;
+}
+
+.nav-list li a {
+  color: rgba(255, 255, 255, 0.6) !important;
+  position: relative;
+  padding-bottom: 5px; 
+}
+
+.nav-list li a::after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  background-color: orange;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-list li a:hover::after{
+  visibility: visible;
+  width: 100%;
+  transform: scaleX(1);
+}
+
+    .middle-icon {
+        width: 50px; 
+        height: auto;
+      }
+      .navbar-nav img {
+        width: 20px; 
+        height: auto;
+        margin-left: 15px;
+      }
+
+      .content {
+        color: #fff; 
+        text-align: center;
+        padding-top: 150px; 
+      }
+
+      .h1 {
+        font-family: 'Times New Roman', serif;
+        font-size: 100px;
+        color: #BE8F45;
+        
+      }
+
+      .btn1 {
+        border: 1px solid white;
+        width: 132px;
+        height: 42px;
+        background-color: rgba(0, 0, 0, 0.3);
+        color: white;
+        font-size: 20px;
+      }
+
+      .vertical-line {
+        width: 5px; 
+        height: 55px; 
+        background-color: #BE8F45;
+        margin-right: 10px;
+      }
+      .contact-row{
+        margin-top: 60px;
+      }
+
+      .contact {
+        font-size: 18px;
+        color: white;
+        margin-left: 10px;
+      }
+
+      @media (max-width: 767px) {
+        .h1 {
+          font-size: 50px; 
+        }
+
+        .btn1 {
+          width: 100px;
+          height: 36px;
+          font-size: 16px;
+        }
+
+        .vertical-line {
+          height: 40px; 
+        }
+
+        .contact-row {
+          flex-direction: column;
+          align-items: center;
+          margin-top: 60px;
+        }
+
+        .contact {
+          text-align: center;
+        }
+
+        .arrow img {
+          width: 50px;
+        }
+        .contact-row{
+          text-align: center;
+          justify-content: center;
+        }
+
+        .contact{
+          text-align: center;
+          justify-content: center;
+        }
+      }
+
+      @media (min-width: 768px) and (max-width: 991px) {
+        .h1 {
+          font-size: 70px; 
+        }
+
+        .btn1 {
+          width: 120px;
+          height: 40px;
+          font-size: 18px;
+        }
+
+        .vertical-line {
+          height: 50px;
+        }
+        .contact-row{
+          text-align: center;
+          justify-content: center;
+        }
+
+        .contact{
+          text-align: center;
+          justify-content: center;
+        }
+      }
+
+  /*---------------------------------------------------------------------------*/
+  .second-sec{
+     background-color: white;
+  }
+  .moustache {
+    max-width: 55px;
+    width: 100%;
+    height: 55px;
+  }
+  .daily{
+    font-size: 40px;
+  }
+  .para{
+    color: #A1A1A1;
+    font-size: 16px;
+  }
+  .product-img{
+    max-width: 290px;
+    width: 100%;
+    height: 501px;
+  }
+  .product-img img{
+    max-width: 270px;
+    width: 100%;
+    height: 470px;
+  }
+
+  .col2,.col3,.col4{
+    max-width: 290px;
+    width: 100%;
+    height: 501px;
+  }
+
+  .product1{
+    background-color: white;
+    z-index: -1;
+    border: 1px solid black;
+    max-width: 290px;
+    width: 100%;
+    height: 340px;
+
+  }
+
+  .product1 img{
+    position: relative;
+    left: 35%;
+    top: 20%;
+  }
+
+ .sumoclay div img{
+   left: 25%!important;
+    top: 30%;
+ }
+  .img-text h2{
+    font-size: 20px;
+    color: black;
+    text-align: left;
+  }
+
+  .img-text h4{
+    font-size: 20px;
+    color: #A1A1A1;
+    text-align: left;
+  }
+
+  .img-btn button{
+    background-color: white;
+    max-width: 290px;
+    width: 100%;
+    height: 50px;
+    border: 1px solid black;
+    text-align: center!important;
+  }
+
+  .how-img img{
+    max-width: 720px;
+    width: 100%;
+   height: 558px;
+  }
+
+  .how-text{
+    background-color: rgb(17,16,13);
+    max-width: 720px;
+    width: 100%;
+    height: 558px;
+  }
+  
+  .how-heading{
+    font-size: 60px;
+    text-align: center;
+    color: #BE8F45;
+  }
+  .how-para{
+    display: inline;
+    font-family: Eric Machat;
+    font-size: 16px;
+    line-height: 24px;
+    color: white;
+  }
+
+  .btn-how{
+    max-width:35px;
+    width: 100%;
+    height: 35px;
+    border-radius: 50%;
+    color: white;
+    background-color: #BE8F45;
+  }
+
+  .blade-para{
+    display: inline;
+    font-size: 44px;
+    line-height: 57px;
+    text-align: center;
+  }
+
+
+.blade-img{
+  max-width: 62px;
+  width: 100%;
+  height: 36px;
+}
+
+/*---------Services section css starts here----------*/
+.person-img img{
+  max-width: 290px;
+  width: 100%;
+
+}
+
+
+.center-button {
+  border: 1px solid black;
+  width: 132px;
+  height: 42px;
+  background-color: white;
+  color: black;
+  font-size: 20px;
+  cursor: pointer;
+  z-index: 1; /* Ensures the button is on top */
+}
+
+
+ .video-container {
+            max-width: 1500px;
+            width: 100%;
+            position: relative;
+            padding-top: 56.25%; /* 16:9 Aspect Ratio */
+            overflow: hidden;
+            background: #000;
+        }
+        .video-container video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            max-width: 1500px;
+            width: 100%;
+            height: 100%;
+        }
+
+/*-------Pricing section css here---------------*/
+ .pp-img1 img{
+  margin-top: 100px;
+  max-width: 356px;
+  width: 100%;
+
+ }
+  .pp-img3 img{
+   margin-top: 100px;
+  max-width: 356px;
+  width: 100%;
+  }
+
+ .pp-img2 img{
+  max-width: 471px;
+  width: 100%;
+ }
+
+ /*---------Our blog section css here----------*/
+ .blog{
+   background-color: rgb(245,245,245);
+ }
+ .blog-btn{
+  max-width: 100px;
+  color: black;
+  font-size: 16px;
+ cursor: pointer;
+ padding: 5px 0px;
+ }
+
+.blog-img img{
+  max-width: 410px;
+  width: 100%;
+}
+.underline{
+  text-decoration: underline;
+  text-decoration-color: orange;
+}
+
+ /*---------Pictures section css here----------*/
+.pic1 img{
+  max-width: 288px;
+  width: 100%;
+}
+
+ /*---------Footer section css here----------*/
+.C-heading{
+   font-family: IvyOra Display;
+   font-weight: bold;
+}
+.c-heading1{
+   text-decoration: underline;
+   text-decoration-color: orange;
+}
+.para1{
+  font-size: 14px;
+  color: #A1A1A1;
+  font-family: Eric Machat;
+}
+
+.list-unstyled {
+    padding-left: 0;
+    list-style: none;
+}
+ .custom-social li {
+    margin: 2px;
+    display: inline-block;
+}
+.custom-social li a {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    display: inline-block;
+    color: black;
+}
+.custom-social li a{
+    text-decoration: none;
+}
+ .custom-social li {
+    margin: 2px;
+    display: inline-block;
+}
+/*--------vertical line css  here-------*/
+.footer-column {
+    position: relative;
+    padding: 0 20px;
+}
+
+.footer-column.border-right {
+    border-right: 1px solid #A1A1A1;
+}
+
+.footer-column.border-left {
+    border-left: 1px solid #A1A1A1;
+}
+
+/* Ensure responsiveness */
+@media (max-width: 767px) {
+    .footer-column.border-right,
+    .footer-column.border-left {
+        border: none;
+    }
+}
+
+/*--------carousal css starts here-------*/
+.carousal-container{
+  background-color: rgb(35,34,35);
+}
+
+
+.custom-carousel-width {
+  max-width: 60%; 
+  margin: 30px auto;
+}
+
